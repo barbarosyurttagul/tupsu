@@ -126,6 +126,8 @@ namespace TupveSuAboneTakipWinFormUI.CustomerForms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+
+            //deneme
             List<Customer> searched = customers.Where(c => c.GroupOf.GroupName.ToUpper().Contains(txtSearchGroup.Text.ToUpper()) &&
                                                            c.FirmName.ToUpper().Contains(txtSearchFirmName.Text.ToUpper()) &&
                                                            c.FirstName.ToUpper().Contains(txtSearchFirstName.Text.ToUpper()) &&
@@ -140,15 +142,6 @@ namespace TupveSuAboneTakipWinFormUI.CustomerForms
 
         private void Ara(object sender, EventArgs e)
         {
-
-            
-
-            //List<Customer> searched = customers.Where(c =>( (c.CustomerID==(Convert.ToInt32(txtSearchCustomerID.Text)) &&( c.FirstName==txtSearchFirstName.Text))).ToList();
-
-
-            //var Result = from c in customers parantezdemı hata vardı ok butun alanları bole eklıcaz 
-            //             where c.CustomerID == Convert.ToInt32(txtSearchCustomerID.Text) 
-            //             select c; if ıkı sorgu yaz bossa bırı calısın doluysa dıgerı yada try ıcıne alkı tavsıye etmem ok? grup bosken patlamıyormu sorryy ozaman ife customer ıd bossa dıyecen
             List<Customer> searched=new List<Customer>();
             if (txtSearchCustomerID.Text == "")
             {
@@ -166,11 +159,8 @@ namespace TupveSuAboneTakipWinFormUI.CustomerForms
                                                                c.GroupOf.GroupName.ToUpper().StartsWith(txtSearchGroup.Text.ToUpper()) &&
                                                                c.CustomerID==Convert.ToInt32(txtSearchCustomerID.Text) &&
                                                                c.Phone.ToUpper().StartsWith(txtSearchPhone.Text.ToUpper())).ToList();
-            }
-            
-            dgvCustomerList.DataSource = searched; 
-            
-                      
+            }            
+            dgvCustomerList.DataSource = searched;                     
         }
 
         private void txtSearchFirmName_TextChanged(object sender, EventArgs e)
@@ -185,34 +175,21 @@ namespace TupveSuAboneTakipWinFormUI.CustomerForms
         
         private void txtSearchLastName_TextChanged(object sender, EventArgs e)
         {
-            //List<Customer> searched = customers.Where(c => c.LastName.ToUpper().StartsWith(txtSearchLastName.Text.ToUpper())).ToList();
-            //dgvCustomerList.DataSource = searched;
             Ara(sender, e);
         }
 
         private void txtSearchCustomerID_TextChanged(object sender, EventArgs e)
         {
-            //if (txtSearchCustomerID.Text != "")
-            //{
-            //    List<Customer> searched = customers.Where(c => c.CustomerID == Convert.ToInt32(txtSearchCustomerID.Text)).ToList();
-            //    dgvCustomerList.DataSource = searched;
-            //}
-            //else
-            //    PopulateGridView();
             Ara(sender, e);
         }
 
         private void txtSearchPhone_TextChanged(object sender, EventArgs e)
         {
-            //List<Customer> searched = customers.Where(c => c.Phone.ToUpper().StartsWith(txtSearchPhone.Text.ToUpper())).ToList();
-            //dgvCustomerList.DataSource = searched;
             Ara(sender, e);
         }
         
         private void txtSearchGroup_TextChanged(object sender, EventArgs e)
         {
-            //List<Customer> searched = customers.Where(c => c.GroupOf.GroupName.ToUpper().StartsWith(txtSearchGroup.Text.ToUpper())).ToList();
-            //dgvCustomerList.DataSource = searched;  
             Ara(sender, e);
         }
         #endregion
@@ -264,10 +241,7 @@ namespace TupveSuAboneTakipWinFormUI.CustomerForms
 
         private void dgvCustomerList_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            //ben senı duyorum 
-
-
-            //txtCustomerID.Text=dgvCustomerList.ce
+            
         }
 
         
