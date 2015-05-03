@@ -1,0 +1,5 @@
+\\psf\Home\Documents\Visual Studio 2013\Projects\TupveSuAboneTakip\Helper\bin\Debug\Helper.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\TupveSuAboneTakip\Helper\bin\Debug\Helper.pdb
+\\psf\Home\Documents\Visual Studio 2013\Projects\TupveSuAboneTakip\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\Visual Studio 2013\Projects\TupveSuAboneTakip\Helper\obj\Debug\Helper.dll
+\\psf\Home\Documents\Visual Studio 2013\Projects\TupveSuAboneTakip\Helper\obj\Debug\Helper.pdb
